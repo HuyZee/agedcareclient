@@ -1,0 +1,821 @@
+
+/* Common Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #f3f9ff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  }
+  li {
+  list-style-type: none;
+  }
+  a {
+  text-decoration: none;
+  }
+  button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+.create-user-form > .cancel-btn {
+  background-color: #d9854d;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.delete-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.create-user-form > .cancel-btn:hover {
+  background-color: #b32400;
+}
+
+.create-user-form > .confirm-btn {
+  background-color: #138308;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.create-user-form > .confirm-btn:hover {
+  background-color: #064400;
+}
+/* loading styles  */
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #1D3D6F;
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  animation: spin 1s ease-in-out infinite;
+  margin: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.adminhub-content-calender {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+}
+
+.adminhub-content-calender h1 {
+margin: 20px;
+color: #1D3D6F;
+}
+.appointments-table-calender {
+  color: #585858;
+}
+/* admin styles  */
+.adminhub-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+}
+.adminhub-content h1 {
+margin: 20px;
+color: #1D3D6F;
+}
+.adminhub-content button {
+padding: 40px;
+margin: 20px;
+font-size: 16px;
+font-weight: bold;
+background-color: #78AAF4;
+margin-top:20px ;
+
+}
+
+/* logout button   */
+#logout-button {
+  background-color: #d9854d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#logout-button:hover {
+  background-color: #b32400;
+}
+
+/* admin sidebar styles  */
+.admin-hub-sidebar {
+  display: flex;
+  flex-direction: row;
+  background-color: #C9DEFF;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Added box-shadow property */  
+  height: 100%;
+  width: max-content;
+  }
+
+  .admin-hub-sidebar button { 
+    margin: 5px 20px;
+    padding: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #214274;
+    color: #f3f9ff ;
+    }
+
+  .admin-hub-sidebar button:hover {
+    background-color: #678fcf;
+  }
+
+/* create page styles  */
+.back-button {
+background-color: #4D8FD9;
+color: #fff;
+border: none;
+padding: 10px 20px;
+margin: 20px;
+cursor: pointer;
+border-radius: 4px;
+
+}
+.create-user-container {
+  color: #585858;
+
+margin: 20px;
+display: flex ;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.create-user-container h1 {
+color: #1D3D6F;
+}
+
+.create-user-form {
+width: 50%;
+margin: auto;
+}
+
+.create-user-form textarea,
+.create-user-form input[type="text"],
+.create-user-form input[type="email"],
+.create-user-form input[type="password"],
+.create-user-form input[type="date"],
+.create-user-form input[type="time"],
+.create-user-form select {
+width: 100%;
+margin-bottom: 10px;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.create-user-form button {
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+background-color: #4D8FD9;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.create-user-form button:hover {
+background-color: #0056b3;
+}
+
+/* admin navbar  */
+.AdminNavbar {
+  background-color: #6695DB;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #6695DB;
+}
+
+/* li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+nav {
+ background-color: #3B6199;
+ margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  padding: 0;
+}
+
+button {
+  background-color: #1D3D6F;
+  color: #F9F9F9;
+  border: none;
+  padding: 10px 40px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #7794BF;
+
+} */
+/* Home Page Styles */
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Added margin */
+}
+
+.Home h1 {
+  font-size: 60px; /* Increased font size */
+  margin-bottom: 40px;
+  margin-top: 0; /* Move h1 to the very top */
+  color: #1D3D6F;
+}
+
+.Home button {
+  padding: 25px 50px; /* Increased padding */
+  margin: 40px; /* Increased margin */
+  font-size: 30px; /* Increased font size */
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4
+  px; /* Increased border radius */
+  cursor: pointer;
+}
+
+.Home button:hover {
+  background-color: #1D3D6F;
+}
+
+.Home button:last-child {
+  margin-bottom: 0;
+}
+
+/* Login Page Styles */
+.Login {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.Login h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #1D3D6F;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Login button {
+  padding: 10px;
+  margin-bottom: 20px ;
+  background-color: #1D3D6F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login button:hover {
+  background-color: #0056b3;
+}
+
+.Login p {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Navigation Bar Styles */
+#menuToggle {
+  display: none;
+}
+.navbar {
+  background-color: #cee9ff;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.toggle-button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*  List page Styles */
+.list-table-div {
+  background-color: #EDEDED;
+  color: #585858;
+  margin: 20px;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.list-table th, .list-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.list-table th {
+  background-color: #B2D0FF; /* Dark gray background color */
+  color: #585858; /* White text color */
+}
+
+  .list-table tbody tr:nth-child(odd) {
+      background-color: #F9F9F9; /* Light gray background color */
+  }
+.list-table tbody tr:nth-child(even) {
+  background-color: #DFDFDF; /* Darker gray background color */
+
+}
+
+.edit-link {
+  color: #0056b3;
+  text-decoration: none;
+
+}
+.edit-link:hover {
+  text-decoration: underline;
+  color: #000102;
+}
+
+.list-table tbody tr:hover {
+  background-color: #c4c4c4; /* Even darker color on hover */
+}
+/* Staff Hub Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #F9F9F9;
+  background-color: #EDEDED;
+}
+
+.staffhub-content {
+display: flex;
+margin: 20px;
+
+}
+.staffhub-content h1 {
+margin: 20px;
+color: #1D3D6F;
+}
+.staffhub-content button {
+padding: 40px;
+margin: 20px;
+font-size: 16px;
+font-weight: bold;
+background-color: #78AAF4;
+margin-top:20px ;
+
+}
+.staff-hub-sidebar {
+display: flex;
+flex-direction: column;
+background-color: #C9DEFF;
+margin: 20px;
+padding: 20px;
+width: 20%;
+border-radius: 10px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Added box-shadow property */  
+height: 70vh;
+}
+
+.staff-hub-sidebar button { 
+padding: 50px;
+font-size: 16px;
+font-weight: bold;
+background-color: #214274;
+margin-top:20px ;
+}
+
+/* edit pages */
+.create-user-container-top-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+
+}
+.create-user-container-top-div > .back-button {
+background-color: #d9854d;
+color: #fff;
+padding: 10px 20px;
+font-weight: 500;
+align-self:center;
+}
+.create-user-container-top-div > .back-button:hover {
+background-color: #d46346;
+}
+
+.edit-button-div button {
+background-color: #4D8FD9;
+color: #fff;
+padding: 10px 20px;
+font-weight:normal;
+}
+
+.edit-button-div button:hover {
+background-color: #0056b3;
+}
+
+/* create pages  */
+.back-button {
+background-color: #4D8FD9;
+color: #fff;
+border: none;
+padding: 10px 20px;
+margin: 20px;
+cursor: pointer;
+border-radius: 4px;
+}
+.create-member-container {
+margin: 20px;
+display: flex ;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.create-member-container h1 {
+color: #1D3D6F;
+}
+
+.create-user-form {
+width: 50%;
+margin: auto;
+}
+
+.create-user-form input[type="text"],
+.create-user-form input[type="date"],
+.create-user-form input[type="number"],
+.create-user-form select {
+width: 100%;
+margin-bottom: 10px;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.create-user-form button {
+width: 100%;
+padding: 10px;
+background-color: #4D8FD9;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.create-user-form button:hover {
+background-color: #0056b3;
+}
+
+/* staff navbar  */
+.StaffNavbar {
+  background-color: #6695DB;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #6695DB;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+nav {
+ background-color: #3B6199;
+ margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  padding: 0;
+}
+
+.AdminNavbar button {
+  background-color: #1D3D6F;
+  color: #F9F9F9;
+  border: none;
+  padding: 10px 40px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #7794BF;
+
+}
+
+/* staff account  */
+
+.staff-account-page {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px;
+  color: #585858;
+
+}
+/* hamburger styles  */
+#menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; 
+    z-index: 2; 
+    
+  }
+  
+/* Tablet Styles */
+@media (max-width: 1600px) {
+  .desktop-nav {
+    display: none;
+  }
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+     background-color: #6695DB;
+    
+    z-index: 1;
+    
+    user-select: none;
+  }
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover
+  {
+    color: tomato;
+  }
+  
+  
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+  }
+  
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #0a0a0a;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+   
+   
+  #menuToggle ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+    list-style-type: none;
+    padding: 50px;
+    margin: 0;
+    align-items: center;
+  }
+  
+  #menu li {
+    padding: 20px 0;
+    font-size: 22px;
+  }
+  
+  #menuToggle input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+  }
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+  /* admin sidebar styles  */
+ .admin-hub-sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: #C9DEFF;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Added box-shadow property */  
+    height: 100%;
+    width: max-content;
+    }
+
+    .admin-hub-sidebar button { 
+      margin: 5px 20px;
+      padding: 18px;
+      font-size: 14px;
+      font-weight: normal;
+      background-color: #214274;
+      color: #f3f9ff ;
+      }
+    
+    .admin-hub-sidebar button:hover {
+      background-color: #678fcf;
+    }
+
+  .adminhub-content { 
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    }
+    
+}
+
+/* Mobile Styles */
+/* @media (max-width: 480px) {
+
+} */
