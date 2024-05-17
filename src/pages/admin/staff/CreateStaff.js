@@ -8,7 +8,7 @@ export default function CreateStaff() {
     name: '',
     lname: '',
     email: '',
-    password: '',
+    password: 'default', // Set default password here
     contact_information: '',
     phoneNo: '',
     mailing_address: '',
@@ -31,7 +31,7 @@ export default function CreateStaff() {
         name: '',
         lname: '',
         email: '',
-        password: '',
+        password: 'default', // Reset default password here
         contact_information: '',
         phoneNo: '',
         mailing_address: '',
@@ -70,8 +70,6 @@ export default function CreateStaff() {
             <h3>Account Information</h3>
             <label>Email:</label>
             <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
             
             <h3>Other Information</h3>
             <label>Qualifications:</label>
